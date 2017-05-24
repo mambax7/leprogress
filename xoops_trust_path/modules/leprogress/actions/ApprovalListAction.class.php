@@ -77,7 +77,7 @@ class Leprogress_ApprovalListAction extends Leprogress_AbstractListAction
 		$this->mFilter->fetch();
 	
 		$handler =& $this->_getHandler();
-		$this->mObjects =& $handler->getObjects($this->mFilter->getCriteria());
+		$this->mObjects = $handler->getObjects($this->mFilter->getCriteria());
 	*/
 		return LEPROGRESS_FRAME_VIEW_INDEX;
 	}

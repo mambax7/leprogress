@@ -87,7 +87,7 @@ class Leprogress_ItemObject extends XoopsSimpleObject
 			$handler =Legacy_Utils::getModuleHandler('history', $this->getDirname());
 			$cri = new Criteria('item_id', $this->get('item_id'));
 			$cri->setSort('posttime', $order);
-			$this->mHistory =& $handler->getObjects($cri);
+			$this->mHistory = $handler->getObjects($cri);
 			$this->_mHistoryLoadedFlag = true;
 		}
 	}
